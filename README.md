@@ -44,18 +44,22 @@ The system provides:
 This project follows a production deployment structure:
 
 
+## Project Structure
+
+```
 edocs.brsec.ac.th/
-├── laravel_app/ # Laravel application (core logic)
-│ ├── app/
-│ ├── routes/
-│ ├── config/
-│ └── ...
+├── laravel_app/        # Laravel application (core logic)
+│   ├── app/
+│   ├── routes/
+│   ├── config/
+│   └── ...
 │
-├── public_html/ # Public web root (served by web server)
-│ ├── index.php
-│ ├── .htaccess
-│ ├── uploads/
-│ └── ...
+├── public_html/        # Public web root (served by web server)
+│   ├── index.php
+│   ├── .htaccess
+│   ├── uploads/
+│   └── ...
+```
 
 
 ### Explanation
