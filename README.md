@@ -112,4 +112,4 @@ Deployment Notes
 
 Developer
 
-Thanawat Sangkhansen (Bank)
+Thanawat Sangkasen (Bank)
