@@ -24,7 +24,8 @@ public function index()
         });
     }
 
-    $documents = $query->latest()->paginate(20)->withQueryString();
+    // $documents = $query->latest()->paginate(20)->withQueryString();
+    $documents = $query->latest()->get();
 
     $folderName = 'เอกสารทั้งหมด';
     $id = null;
@@ -88,7 +89,7 @@ public function index()
         }
 
         // ดึงข้อมูลและทำ Pagination
-        $documents = $query->latest()->paginate(20)->withQueryString();
+        $documents = $query->latest()->get();
 
         return view('documents.index', compact('documents', 'id', 'folderName', 'isPublic'));
     }
@@ -400,7 +401,7 @@ public function index()
             });
         }
 
-        $documents = $query->latest()->paginate(20)->withQueryString();
+        $documents = $query->latest()->get();
         
         // ตั้งค่าตัวแปรเพื่อให้หน้า View แสดงผลได้ถูกต้อง
         $folderName = "ผลการค้นหาที่คุณเข้าถึงได้";
